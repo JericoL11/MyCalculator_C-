@@ -41,6 +41,7 @@ namespace MyCalculator
         private void btn_cLast_Click(object sender, EventArgs e)
 
         {
+            //auto-fill 0 if true
             if (txt_numbers.Text.Length == 1)
             {
                 txt_numbers.Text = "0";
@@ -57,7 +58,7 @@ namespace MyCalculator
                     {
                         string x = txt_numbers.Text;
 
-                        //get the lasat data
+                        //exclude the last index
                         txt_numbers.Text = x.Substring(0, x.Length - 1);
 
                     }
